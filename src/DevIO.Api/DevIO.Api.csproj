@@ -1,0 +1,118 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="%2a%2a\**" />
+    <Content Remove="%2a%2a\**" />
+    <EmbeddedResource Remove="%2a%2a\**" />
+    <None Remove="%2a%2a\**" />
+    <TypeScriptCompile Remove="%2a%2a\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Remove="%2a%2a\%2a.ts" />
+    <TypeScriptCompile Remove="%2a%2a\%2a.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\app\.vscode\launch.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="3.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="3.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.5.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevIO.Business\DevIO.Business.csproj" />
+    <ProjectReference Include="..\DevIO.Data\DevIO.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\app\demo-webapi\.editorconfig" />
+    <None Include="wwwroot\app\demo-webapi\.gitignore" />
+    <None Include="wwwroot\app\demo-webapi\.git\COMMIT_EDITMSG" />
+    <None Include="wwwroot\app\demo-webapi\.git\config" />
+    <None Include="wwwroot\app\demo-webapi\.git\description" />
+    <None Include="wwwroot\app\demo-webapi\.git\FETCH_HEAD" />
+    <None Include="wwwroot\app\demo-webapi\.git\HEAD" />
+    <None Include="wwwroot\app\demo-webapi\.git\hooks\applypatch-msg.sample" />
+    <None Include="wwwroot\app\demo-webapi\.git\hooks\commit-msg.sample" />
+    <None Include="wwwroot\app\demo-webapi\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="wwwroot\app\demo-webapi\.git\hooks\post-update.sample" />
+    <None Include="wwwroot\app\demo-webapi\.git\hooks\pre-applypatch.sample" />
+    <None Include="wwwroot\app\demo-webapi\.git\hooks\pre-commit.sample" />
+    <None Include="wwwroot\app\demo-webapi\.git\hooks\pre-push.sample" />
+    <None Include="wwwroot\app\demo-webapi\.git\hooks\pre-rebase.sample" />
+    <None Include="wwwroot\app\demo-webapi\.git\hooks\pre-receive.sample" />
+    <None Include="wwwroot\app\demo-webapi\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="wwwroot\app\demo-webapi\.git\hooks\update.sample" />
+    <None Include="wwwroot\app\demo-webapi\.git\index" />
+    <None Include="wwwroot\app\demo-webapi\.git\info\exclude" />
+    <None Include="wwwroot\app\demo-webapi\.git\logs\HEAD" />
+    <None Include="wwwroot\app\demo-webapi\.git\logs\refs\heads\master" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\0f\3d9d8b9f8e1a938befbfea5ac8bc11494ea709" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\12\0186247eec22e53a3048554a3329d84cfe27ed" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\16\317897b1c50a3a71bc775a8d6429f2b4c6cf98" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\19\0fd300b601e168a3d185dbfa2758ab73257479" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\2c\3ba2995c8510c02ca812f90280146738f162cf" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\36\12073bc31cd4c1f5d6cbb00318521e9a61bd8a" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\37\371cb04b9f1986d952499cdf9613c9d5d8ca8c" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\3b\b25a490a160126e54d01b7d1edcd08b25a3caa" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\3f\35be3cbe2feee78ce574b2910db793a13d6c49" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\57\76aa9eb80d8e5ad05ed75ec9a04e7ee5060ba9" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\65\96cb12eed96597c7d8b57013f9fcf66d5e4608" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\69\84b49b4dc23868380b1ffc8a7c0931ac361551" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\6d\dbababba248bcacae373d5b9532c9ddc1f720f" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\75\d63939892442b98636cf726a4828ef78d7fd28" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\7b\4f817adb754769ca126a939d48ac4b0850489d" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\80\81c7ceaf2be08bf59010158c586170d9d2d517" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\80\ed84780d0fe83aade04f19306b6d19af022dcd" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\82\ba1fd7c5ea3c8b974dae244896c344290c4946" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\86\776a391a5b48b32506eb0fa62b15ed6c926b69" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\86\8ecba0db1b781aa74d9c7a5247a1cd567f4b0e" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\90\d4ee0072ce3fc41812f8af910219f9eea3c3de" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\99\6b75c5169ba0d5726c5b7b2d2d78e3138c29b2" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\9c\5b17f5ea585f3ef58ba26d71c315a8d75b22a5" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\a3\e61905fb78dcc1a852e766e05e618e07479756" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\a6\dd6220282460dae17d69fc030b94ab1e81d960" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\a9\eaedc7492aa5ab5ed5a5825e1134bb797b8a00" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\aa\7c3eeb76b77f7cc456be1aa1cf6078688fcf31" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\b2\71fd9f3d55adf81bfd0da7d83de3eb88b7e191" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\b8\541ef6795a7e9376fc905cfdb7a1f9c2df5c23" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\b8\eca409c27cf60c5e887289a5914785bc3e7ee1" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\c7\b673cf44b388e9989fe908b78d7d73cd2e1409" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\d4\25c6f56b578db1e8d7f8fa2d6c90693ba5d4fb" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\d5\64d0bc3dd917926892c55e3706cc116d5b165e" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\de\7733630eb224b246854a20934f792051926e8f" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\e8\9330a618c137cdaccde46f87923736cc04dfb4" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\ed\5d98307980a4b2664c1869abfbd65cc9294281" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\f3\1616d2be7df8d50afa135f02cc75d142eda56c" />
+    <None Include="wwwroot\app\demo-webapi\.git\objects\f4\f46a5feeb99832da5739425488cf171397a413" />
+    <None Include="wwwroot\app\demo-webapi\.git\refs\heads\master" />
+    <None Include="wwwroot\app\demo-webapi\e2e\protractor.conf.js" />
+    <None Include="wwwroot\app\demo-webapi\README.md" />
+    <None Include="wwwroot\app\demo-webapi\src\assets\.gitkeep" />
+    <None Include="wwwroot\app\demo-webapi\src\browserslist" />
+    <None Include="wwwroot\app\demo-webapi\src\karma.conf.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\app\demo-webapi\.git\objects\info\" />
+    <Folder Include="wwwroot\app\demo-webapi\.git\objects\pack\" />
+    <Folder Include="wwwroot\app\demo-webapi\.git\refs\tags\" />
+  </ItemGroup>
+
+</Project>
